@@ -1,4 +1,4 @@
-@import '../../assets/styles/variables.scss';
+@import '../../../assets/styles/variables.scss';
 
 .imagemTextoContainer {
     padding: 2rem 0 2rem 0;
@@ -14,7 +14,7 @@
         overflow: hidden;
     }
     p {
-        font: $font-secondary;
+        font-family: $font-grafite-secondary;
         font-size: 2rem;
         font-weight: 400;
         text-align: left;

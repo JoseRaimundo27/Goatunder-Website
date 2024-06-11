@@ -1,4 +1,4 @@
-import Camisas from '../../assets/images/camisas.png'
+import Camisas from '../../../assets/images/camisas.png'
 import style from './ImagemTexto.module.scss'
 
 const ImagemTexto = () => {

@@ -1,5 +1,5 @@
-import ImagemTexto from '../ImagemTexto';
-import TituloTexto from '../TituloTexto';
+import ImagemTexto from './ImagemTexto';
+import TituloTexto from './TituloTexto';
 import style from './AboutUs.module.scss'
 
 

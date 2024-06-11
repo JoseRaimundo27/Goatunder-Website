@@ -1,4 +1,4 @@
-@import '../../assets/styles/variables.scss';
+@import '../../../assets/styles/variables.scss';
 
 .tituloTextoContainer {
     padding: 2rem 0 2rem 0;
@@ -7,13 +7,14 @@
     align-items: center;
 
     h2 {
+        font-family: $font-grafite;
         text-align: center;
-        font-size: 7rem;
+        font-size: 6rem;
         font-weight: 600;
     }
 
     p {
-        font: $font-secondary;
+        font-family: $font-grafite-secondary;
         font-size: 2rem;
         font-weight: 400;
         text-align: left;
