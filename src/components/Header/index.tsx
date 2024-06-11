@@ -1,40 +1,37 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './Header.module.scss'
 import Logo from '../../../public/logo.png'
 import { Link } from 'react-router-dom'
-import { FaWhatsappSquare, FaInstagramSquare, FaUser  } from "react-icons/fa";
+import MenuIcones from './MenuIcones'
+import HeaderMenu from './HeaderMenu';
+import classNames from 'classnames';
 
 export const Header: React.FC = () => {
+  const [scrollPos, setScrollPos] = useState<number>(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Definir o estado inicial
+    handleScroll();
+
+    // Cleanup do listener ao desmontar o componente
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
-    <div className={style.header}>
+    <div className={`${scrollPos < 25 ? style.header :  classNames(style.header, style.transparente)}`}>
       <Link to={"/"}>
         <img src={Logo} alt="Logo Goatunder" />
       </Link>
-
-      <ul className={style.header__menu}>
-        <li className={style.header__menu__item}>
-          <Link to={"/"}>Inicio</Link>
-        </li>
-        <li className={style.header__menu__item}>
-          <Link to={"/produtos"}>Produtos</Link>
-        </li>
-        <li className={style.header__menu__item}>
-          <Link to={"/contato"}>Contato</Link>
-        </li>
-      </ul>
-
-      <ul className={style.menuIcones}>
-        <li className={style.header__menuIcones__item}>
-          <Link to={"/login"}><FaUser /></Link>
-        </li>
-        <li className={style.header__menuIcones__item}>
-          <a href="https://api.whatsapp.com/send/?phone=5571996086112&text&type=phone_number&app_absent=0" target="_blank"><FaWhatsappSquare fontSize={40}/></a>
-        </li>
-        <li className={style.header__menuIcones__item}>
-          <a href="https://www.instagram.com/goatunder.co/" target="_blank" ><FaInstagramSquare fontSize={40}/></a>
-        </li>
-      </ul>
-
+    <HeaderMenu/>
+    <MenuIcones/>
     </div>
   )
 }

@@ -1,0 +1,21 @@
+@import '../../assets/styles/variables.scss';
+
+.tituloTextoContainer {
+    padding: 2rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        font-size: 7rem;
+        font-weight: 600;
+    }
+
+    p {
+        font: $font-secondary;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: left;
+    }
+}

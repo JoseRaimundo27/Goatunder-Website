@@ -1,5 +1,5 @@
 import React from 'react'
-import MainLayout from '../../layouts/MainLayout.tsx'
+import MainLayout from '../../layouts/MainLayout/MainLayout.tsx'
 
 const Login : React.FC = () => {
   return (

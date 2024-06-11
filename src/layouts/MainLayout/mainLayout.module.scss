@@ -1,0 +1,12 @@
+@import '/src/assets/styles/variables.scss';
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: $light-gray;
+    .container__main {
+        background-color: $light-gray;
+        min-height: 100vh;
+        max-width: 100%;
+    }
+}
