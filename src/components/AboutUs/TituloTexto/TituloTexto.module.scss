@@ -20,3 +20,51 @@
         text-align: left;
     }
 }
+
+@media (max-width: 1600px) {
+    .tituloTextoContainer {
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .tituloTextoContainer {
+        h2 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tituloTextoContainer {
+        h2 {
+            font-size: 2.1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .tituloTextoContainer {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}

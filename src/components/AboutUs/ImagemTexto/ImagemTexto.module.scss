@@ -12,11 +12,64 @@
         height: 100%;
         object-fit: cover;
         overflow: hidden;
+        &:hover {
+            height: 120%;
+        }
     }
+    
     p {
         font-family: $font-grafite-secondary;
         font-size: 2rem;
         font-weight: 400;
         text-align: left;
+    }
+}
+
+
+@media (max-width: 1600px) {
+    .imagemTextoContainer {
+        img {
+            height: 80%;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .imagemTextoContainer {
+        img {
+            height: 60%;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .imagemTextoContainer {
+        img {
+            height: 55%;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .imagemTextoContainer {
+        img {
+            height: 45%;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
     }
 }
