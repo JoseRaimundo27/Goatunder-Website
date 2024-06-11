@@ -40,12 +40,15 @@
 
 @media (max-width: 1024px) {
     .imagemTextoContainer {
+        display: flex;
+        flex-direction: column;
         img {
             height: 60%;
         }
 
         p {
             font-size: 1.1rem;
+            text-align: center;
         }
     }
 }
@@ -62,14 +65,14 @@
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 510px) {
     .imagemTextoContainer {
         img {
-            height: 45%;
+            height: 20rem;
         }
 
         p {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
     }
 }

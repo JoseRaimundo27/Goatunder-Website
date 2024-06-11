@@ -34,7 +34,8 @@
     &__menuIcones__item > a {
         font-size: 2rem;
     }
-    
+
+   
 }
 
 .header.transparente {
@@ -48,4 +49,14 @@
    }
 
 }
+
+@media (max-width: 510px) {
+    .header__menuIcones__item {
+        a {
+            height: 20px;
+        }
+    }
+   
+ 
+ }
 

@@ -35,12 +35,18 @@
 
 @media (max-width: 1024px) {
     .tituloTextoContainer {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 1.5rem;
         h2 {
             font-size: 3rem;
+            text-align: center;
         }
 
         p {
             font-size: 1.1rem;
+            text-align: center;
         }
     }
 }
@@ -57,7 +63,7 @@
     }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 510px) {
     .tituloTextoContainer {
         h2 {
             font-size: 1.5rem;
