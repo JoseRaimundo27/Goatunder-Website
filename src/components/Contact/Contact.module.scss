@@ -6,7 +6,6 @@
     padding: 2rem 0 2rem 0;
     font-family: $font-grafite-secondary;
     
-
     form {
         border: 1px solid $black;
         border-radius: 1rem;
@@ -23,11 +22,43 @@
         input {
             margin: 1rem 0 1rem 0;
             width: 100%;
-            justify-self: center;
+        
         }
 
         button {
             background-color: black;
+        }
+    }
+}
+
+@media screen and (max-width: 1212px ){
+    .contatoContainer {
+        form {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 1354px ){
+    .contatoContainer {
+        form {
+            label {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px ){
+    .contatoContainer {
+        form {
+            label {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            
         }
     }
 }

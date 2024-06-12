@@ -6,7 +6,11 @@ import MenuIcones from './MenuIcones'
 import HeaderMenu from './HeaderMenu';
 import classNames from 'classnames';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  isLogin? : boolean
+}
+
+export const Header: React.FC<HeaderProps> = ({isLogin = false}) => {
   const [scrollPos, setScrollPos] = useState<number>(0);
 
   useEffect(() => {
@@ -30,7 +34,7 @@ export const Header: React.FC = () => {
       <Link to={"/"}>
         <img src={Logo} alt="Logo Goatunder" />
       </Link>
-    <HeaderMenu/>
+    <HeaderMenu isLogin={isLogin}/>
     <MenuIcones/>
     </div>
   )

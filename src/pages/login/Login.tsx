@@ -3,7 +3,7 @@ import MainLayout from '../../layouts/MainLayout/MainLayout.tsx'
 
 const Login : React.FC = () => {
   return (
-    <MainLayout>
+    <MainLayout isLogin={true}>
       <div>Restante do Login</div>
     </MainLayout>
   )
