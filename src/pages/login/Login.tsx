@@ -1,9 +1,13 @@
-import React from 'react'
+import { useSetLoginState } from '../../hooks/useSetLoginState.tsx';
 import MainLayout from '../../layouts/MainLayout/MainLayout.tsx'
 
-const Login : React.FC = () => {
+
+const Login: React.FC = () => {
+
+  useSetLoginState(true);
+
   return (
-    <MainLayout isLogin={true}>
+    <MainLayout >
       <div>Restante do Login</div>
     </MainLayout>
   )

@@ -1,11 +1,11 @@
 import React from 'react'
 import style from '../Header.module.scss'
+import { useRecoilValue } from 'recoil'
+import { isLoginState } from '../../../store/atoms'
 
-interface HeaderMenuProps {
-    isLogin?: boolean
-}
 
-const HeaderMenu : React.FC<HeaderMenuProps> = ( {isLogin = false} ) => {
+const HeaderMenu : React.FC = ( ) => {
+    const isLogin = useRecoilValue(isLoginState) 
     return (
         <ul className={style.header__menu}>
             <li className={style.header__menu__item}>
