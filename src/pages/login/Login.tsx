@@ -1,3 +1,4 @@
+import LoginForm from '../../components/LoginForm/index.tsx';
 import { useSetLoginState } from '../../hooks/useSetLoginState.tsx';
 import MainLayout from '../../layouts/MainLayout/MainLayout.tsx'
 
@@ -8,7 +9,7 @@ const Login: React.FC = () => {
 
   return (
     <MainLayout >
-      <div>Restante do Login</div>
+      <LoginForm/>
     </MainLayout>
   )
 }

@@ -1,5 +1,5 @@
 import { useSetRecoilState } from "recoil"
-import { isLoginState } from "../store/atoms"
+import { isLoginState } from "../store"
 import { useEffect } from "react";
 
 export const useSetLoginState = (isLogin : boolean) => {

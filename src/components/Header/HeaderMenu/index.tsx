@@ -1,7 +1,7 @@
 import React from 'react'
 import style from '../Header.module.scss'
 import { useRecoilValue } from 'recoil'
-import { isLoginState } from '../../../store/atoms'
+import { isLoginState } from '../../../store'
 
 
 const HeaderMenu : React.FC = ( ) => {

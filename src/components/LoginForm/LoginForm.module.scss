@@ -1,0 +1,48 @@
+@import '../../assets/styles/variables.scss';
+
+.loginForm {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 3rem;
+        font-family: $font-primary;
+        font-weight: bold;
+        margin-top: 4.5rem;
+        margin-bottom: 3rem;
+    }
+
+    div {
+        text-align: center;
+        font-family: $font-grafite-secondary;
+
+        label {
+            font-family: $font-grafite;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            width: 24rem;
+            padding: 1rem 0 1em 1rem;
+        }
+
+        a {
+            display: block;
+            text-decoration: underline;
+            color: $black;
+            margin-top: 1rem;
+        }
+    }
+
+    .loginForm__botoes {
+        display: flex;
+        gap: 3rem;
+
+        button {
+            background-color: $black;
+        }
+    }
+}

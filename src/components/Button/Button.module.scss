@@ -1,0 +1,8 @@
+@import '../../assets/styles/variables.scss';
+
+.button {
+  background-color: $black;
+  &:hover {
+    background-color: $dark-gray;
+  }
+}

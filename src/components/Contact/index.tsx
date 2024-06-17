@@ -1,6 +1,7 @@
 import style from './Contact.module.scss'
 import React, { useState } from 'react';
 import { FaCheck } from "react-icons/fa";
+import Button from '../Button';
 
 const Contact = () => {
   const [email, setEmail] = useState<string>('');
@@ -9,6 +10,9 @@ const Contact = () => {
   const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(email)
+    if (email == '') {
+      return
+    }
     setIsEmailSend(true)
     //Codigo de post para o backend
   }
@@ -19,7 +23,7 @@ const Contact = () => {
           <label htmlFor="exampleInputEmail1">Deixe seu email e fique por dentro de novidades, promoções e dicas*</label>
           <input value={email} onChange={(e) => {setEmail(e.target.value)}} style={{display: isEmailSend ? 'none' : 'block' }}type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" />
         </div>
-        <button style={{display: isEmailSend ? 'none' : 'block' }} type="submit" className="btn btn-primary">Enviar</button>
+        <Button isEmailSend={isEmailSend}>Enviar</Button>
         <p style={{display: isEmailSend ? 'block' : 'none', marginTop: '1rem'}}>Email cadastrado com sucesso! <FaCheck fontSize={15} /></p>
       </form>
 
