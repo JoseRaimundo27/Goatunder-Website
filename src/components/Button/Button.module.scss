@@ -2,7 +2,11 @@
 
 .button {
   background-color: $black;
+  border: 2px solid rgb(50,50,50);
+  font-weight: bold;
   &:hover {
     background-color: $dark-gray;
+    border: 2px solid rgb(50,50,50);
+
   }
 }
