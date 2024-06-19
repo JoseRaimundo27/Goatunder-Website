@@ -7,3 +7,4 @@ export const authState= atom<IauthState>({
         user: null
     }
 })
+
