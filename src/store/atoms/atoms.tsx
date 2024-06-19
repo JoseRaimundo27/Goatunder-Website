@@ -20,7 +20,12 @@ export const passwordLoginState = atom<string>({
     default: ''
 })
 
-export const passwordRegisterState = atom<string>({
-    key: 'passwordRegisterState',
+export const passwordRegister1State = atom<string>({
+    key: 'passwordRegister1State',
+    default: ''
+})
+
+export const passwordRegister2State = atom<string>({
+    key: 'passwordRegister2State',
     default: ''
 })
