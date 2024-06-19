@@ -1,9 +1,4 @@
-import { atom } from "recoil";
-
-export const isShortMenuState = atom<boolean>({
-    key: 'isShortMenu',
-    default: false
-})
+import { atom } from "recoil"
 
 export const usernameLoginState = atom<string>({
     key: 'usernameLoginState',
