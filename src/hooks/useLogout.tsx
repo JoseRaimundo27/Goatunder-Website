@@ -11,6 +11,7 @@ const useLogout = () => {
             token:null,
             user: null
         })
+        localStorage.removeItem('authToken');
         navigate('/login')
     }
 

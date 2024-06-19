@@ -7,6 +7,7 @@ import Admin from './pages/Admin';
 import { useRecoilValue } from 'recoil';
 import { setupInterceptors } from './services';
 import { authState } from './store';
+import useInitializeAuth from './hooks/useInitializeAuth';
 
 const App: React.FC = () => {
   //Configura o token no header das requisições do usuário?
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       setupInterceptors(() => auth);
   }, [auth]);
   
+  useInitializeAuth() // Carrega o token do localStorage ao inicializar
   return (
     <Router>
       <Routes>
@@ -22,7 +24,6 @@ const App: React.FC = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/admin" element={<Admin/>} />
         <Route path="*" element={<NotFound />} />
-        
       </Routes>
     </Router>
   );
