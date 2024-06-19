@@ -11,14 +11,14 @@ import { useScrollPosition } from '../../hooks'
 
 export const Header: React.FC = () => {
   const scrollPos = useScrollPosition()
-  
+
   return (
-    <div className={`${scrollPos < 25 ? style.header :  classNames(style.header, style.transparente)}`}>
+    <div className={`${scrollPos < 25 ? style.header : classNames(style.header, style.transparente)}`}>
       <Link to={"/"}>
         <img src={Logo} alt="Logo Goatunder" />
       </Link>
-    <HeaderMenu />
-    <MenuIcones/>
+      <HeaderMenu />
+      <MenuIcones />
     </div>
   )
 }

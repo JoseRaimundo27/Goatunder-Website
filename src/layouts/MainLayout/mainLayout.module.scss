@@ -5,7 +5,9 @@
     width: 100%;
     
     .container__main {
+        color: white;
         background-color: $light-gray;
+        background: url('../../../public/wall.png');
         min-height: 100vh;
         max-width: 100%;
     }

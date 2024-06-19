@@ -1,11 +1,12 @@
 import React from 'react'
 import style from '../Header.module.scss'
 import { useRecoilValue } from 'recoil'
-import { isLoginState } from '../../../store'
+import { isShortMenuState } from '../../../store'
+
 
 
 const HeaderMenu : React.FC = ( ) => {
-    const isLogin = useRecoilValue(isLoginState) 
+    const isLogin = useRecoilValue(isShortMenuState) 
     return (
         <ul className={style.header__menu}>
             <li className={style.header__menu__item}>

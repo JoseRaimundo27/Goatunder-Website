@@ -1,12 +1,12 @@
 import LoginForm from '../../components/LoginForm/index.tsx';
 import RegisterForm from '../../components/RegisterForm/index.tsx';
-import { useSetLoginState } from '../../hooks/useSetLoginState.tsx';
+import { useSetShortMenu } from '../../hooks/useSetShortMenu.tsx';
 import MainLayout from '../../layouts/MainLayout/MainLayout.tsx'
 import style from './Login.module.scss'
 
 const Login: React.FC = () => {
 
-  useSetLoginState(true);
+  useSetShortMenu(true);
 
   return (
     <MainLayout >

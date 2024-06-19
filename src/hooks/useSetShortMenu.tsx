@@ -1,9 +1,9 @@
 import { useSetRecoilState } from "recoil"
-import { isLoginState } from "../store"
+import { isShortMenuState } from "../store"
 import { useEffect } from "react";
 
-export const useSetLoginState = (isLogin : boolean) => {
-    const setIsLogin = useSetRecoilState(isLoginState);
+export const useSetShortMenu = (isLogin : boolean) => {
+    const setIsLogin = useSetRecoilState(isShortMenuState);
     useEffect( () => {
         setIsLogin(isLogin)
     }, [setIsLogin, isLogin]) // Vou passar esse array de dependencias apenas como boas práticas
