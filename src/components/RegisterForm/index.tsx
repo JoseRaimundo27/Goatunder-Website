@@ -13,9 +13,9 @@ const RegisterForm = () => {
             <Form
                 titulo='Registrar'
                 onSubmit={onSubmit}
-                label1='Registre Usuário'
-                label2='Digite sua senha'
-                label3='Digite novamente sua senha'
+                label_user='Registre Usuário'
+                label_password_1='Digite sua senha de registro'
+                label_password_2='Digite novamente sua senha'
             />
         </div>
 

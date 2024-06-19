@@ -8,8 +8,8 @@ const LoginForm = () => {
     return (
         <Form
             titulo='Login'
-            label1='Usuário'
-            label2='Senha'
+            label_user='Usuário'
+            label_password_1='Senha'
             onSubmit={onSubmit}
         />
     )
