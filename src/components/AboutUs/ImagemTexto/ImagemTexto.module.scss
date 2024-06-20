@@ -12,17 +12,30 @@
         height: 100%;
         object-fit: cover;
         overflow: hidden;
-        &:hover {
-            height: 120%;
+       
+    }
+
+    div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        p {
+            font-family: $font-grafite-secondary;
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: left;
         }
+        img {
+            position: absolute;
+            top: 55%;
+            
+            justify-self: end;
+            align-self: end;
+        }
+        
     }
-    
-    p {
-        font-family: $font-grafite-secondary;
-        font-size: 2rem;
-        font-weight: 400;
-        text-align: left;
-    }
+
 }
 
 

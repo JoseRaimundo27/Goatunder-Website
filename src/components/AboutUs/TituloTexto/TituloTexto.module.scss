@@ -2,22 +2,21 @@
 
 .tituloTextoContainer {
     padding: 2rem 0 2rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+   
 
     h2 {
+        margin: 1rem 15rem 1rem 15rem;
         font-family: $font-grafite;
         text-align: center;
-        font-size: 6rem;
+        font-size: 4rem;
         font-weight: 600;
-    }
-
-    p {
-        font-family: $font-grafite-secondary;
-        font-size: 2rem;
-        font-weight: 400;
-        text-align: left;
+        div {
+            font-size: 6.5rem;
+        }
     }
 }
 
@@ -27,9 +26,7 @@
             font-size: 4rem;
         }
 
-        p {
-            font-size: 1.5rem;
-        }
+        
     }
 }
 
@@ -43,11 +40,6 @@
             font-size: 3rem;
             text-align: center;
         }
-
-        p {
-            font-size: 1.1rem;
-            text-align: center;
-        }
     }
 }
 
@@ -57,9 +49,6 @@
             font-size: 2.1rem;
         }
 
-        p {
-            font-size: 0.9rem;
-        }
     }
 }
 
@@ -69,8 +58,6 @@
             font-size: 1.5rem;
         }
 
-        p {
-            font-size: 0.8rem;
-        }
+
     }
 }
