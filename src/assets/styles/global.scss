@@ -57,3 +57,17 @@ body {
 a {
 	text-decoration: none;
 }
+
+::selection {
+	background: rgba(200, 200, 200, 0.5);
+}
+
+::-webkit-selection {
+    
+	background: rgba(200, 200, 200, 0.5);
+}
+
+
+::-moz-selection {
+	background: rgba(200, 200, 200, 0.5);
+}

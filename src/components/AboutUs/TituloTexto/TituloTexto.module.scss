@@ -23,7 +23,10 @@
 @media (max-width: 1600px) {
     .tituloTextoContainer {
         h2 {
-            font-size: 4rem;
+            font-size: 3rem;
+            div{
+                font-size: 4rem;
+            }
         }
 
         
@@ -34,11 +37,13 @@
     .tituloTextoContainer {
         display: flex;
         flex-direction: column;
-        
         gap: 1.5rem;
         h2 {
-            font-size: 3rem;
+            font-size: 2rem;
             text-align: center;
+            div {
+                font-size: 3rem;
+            }
         }
     }
 }

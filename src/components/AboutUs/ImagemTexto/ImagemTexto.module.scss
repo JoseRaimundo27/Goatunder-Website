@@ -4,7 +4,6 @@
     padding: 2rem 0 2rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     margin-top: 1rem;
 
     img {
@@ -28,10 +27,24 @@
         }
         img {
             position: absolute;
-            top: 55%;
-            
+            height: 60%;
+            bottom: 14%;
+            right: 10%;
             justify-self: end;
             align-self: end;
+        }
+
+        div {
+            height: 100%;
+            right: 50%;
+            bottom: -2%;
+            position: absolute;
+            img {
+                height: 43%;
+
+                
+                align-self: start;
+            }
         }
         
     }
